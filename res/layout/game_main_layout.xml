@@ -117,7 +117,7 @@
 
         <LinearLayout
             android:id="@+id/ll_gameView"
-            android:layout_width="240dp"
+            android:layout_width="@dimen/grid_total"
             android:layout_height="wrap_content"
             android:background="@color/gridback_2048"
             android:orientation="vertical">
@@ -131,8 +131,8 @@
                 android:orientation="horizontal">
 
                 <RelativeLayout
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="@dimen/grid_width"
+                    android:layout_height="@dimen/grid_width"
                     android:background="@color/linecolor_2048"
                     android:paddingBottom="@dimen/line_width"
                     android:paddingLeft="@dimen/line_dWidth"
@@ -148,8 +148,8 @@
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="@dimen/grid_width"
+                    android:layout_height="@dimen/grid_width"
                     android:background="@color/linecolor_2048"
                     android:paddingBottom="@dimen/line_width"
                     android:paddingLeft="@dimen/line_width"
@@ -165,8 +165,8 @@
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="@dimen/grid_width"
+                    android:layout_height="@dimen/grid_width"
                     android:background="@color/linecolor_2048"
                     android:paddingBottom="@dimen/line_width"
                     android:paddingLeft="@dimen/line_width"
@@ -182,8 +182,8 @@
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="@dimen/grid_width"
+                    android:layout_height="@dimen/grid_width"
                     android:background="@color/linecolor_2048"
                     android:paddingBottom="@dimen/line_width"
                     android:paddingLeft="@dimen/line_width"
@@ -207,8 +207,8 @@
                 android:orientation="horizontal">
 
                 <RelativeLayout
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="@dimen/grid_width"
+                    android:layout_height="@dimen/grid_width"
                     android:background="@color/linecolor_2048"
                     android:paddingBottom="@dimen/line_width"
                     android:paddingLeft="@dimen/line_dWidth"
@@ -224,8 +224,8 @@
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="@dimen/grid_width"
+                    android:layout_height="@dimen/grid_width"
                     android:background="@color/linecolor_2048"
                     android:paddingBottom="@dimen/line_width"
                     android:paddingLeft="@dimen/line_width"
@@ -241,8 +241,8 @@
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="@dimen/grid_width"
+                    android:layout_height="@dimen/grid_width"
                     android:background="@color/linecolor_2048"
                     android:paddingBottom="@dimen/line_width"
                     android:paddingLeft="@dimen/line_width"
@@ -258,8 +258,8 @@
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="@dimen/grid_width"
+                    android:layout_height="@dimen/grid_width"
                     android:background="@color/linecolor_2048"
                     android:paddingBottom="@dimen/line_width"
                     android:paddingLeft="@dimen/line_width"
@@ -283,8 +283,8 @@
                 android:orientation="horizontal">
 
                 <RelativeLayout
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="@dimen/grid_width"
+                    android:layout_height="@dimen/grid_width"
                     android:background="@color/linecolor_2048"
                     android:paddingBottom="@dimen/line_width"
                     android:paddingLeft="@dimen/line_dWidth"
@@ -300,8 +300,8 @@
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="@dimen/grid_width"
+                    android:layout_height="@dimen/grid_width"
                     android:background="@color/linecolor_2048"
                     android:paddingBottom="@dimen/line_width"
                     android:paddingLeft="@dimen/line_width"
@@ -317,8 +317,8 @@
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="@dimen/grid_width"
+                    android:layout_height="@dimen/grid_width"
                     android:background="@color/linecolor_2048"
                     android:paddingBottom="@dimen/line_width"
                     android:paddingLeft="@dimen/line_width"
@@ -334,8 +334,8 @@
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="@dimen/grid_width"
+                    android:layout_height="@dimen/grid_width"
                     android:background="@color/linecolor_2048"
                     android:paddingBottom="@dimen/line_width"
                     android:paddingLeft="@dimen/line_width"
@@ -359,8 +359,8 @@
                 android:orientation="horizontal">
 
                 <RelativeLayout
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="@dimen/grid_width"
+                    android:layout_height="@dimen/grid_width"
                     android:background="@color/linecolor_2048"
                     android:paddingBottom="@dimen/line_dWidth"
                     android:paddingLeft="@dimen/line_dWidth"
@@ -376,8 +376,8 @@
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="@dimen/grid_width"
+                    android:layout_height="@dimen/grid_width"
                     android:background="@color/linecolor_2048"
                     android:paddingBottom="@dimen/line_dWidth"
                     android:paddingLeft="@dimen/line_width"
@@ -393,8 +393,8 @@
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="@dimen/grid_width"
+                    android:layout_height="@dimen/grid_width"
                     android:background="@color/linecolor_2048"
                     android:paddingBottom="@dimen/line_dWidth"
                     android:paddingLeft="@dimen/line_width"
@@ -410,8 +410,8 @@
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="@dimen/grid_width"
+                    android:layout_height="@dimen/grid_width"
                     android:background="@color/linecolor_2048"
                     android:paddingBottom="@dimen/line_dWidth"
                     android:paddingLeft="@dimen/line_width"

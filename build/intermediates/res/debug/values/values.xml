@@ -4,10 +4,11 @@
     <!-- From: file:/D:/SkyDrive/SourceCode/Android_proj/game2048/res/values/colors.xml -->
     <eat-comment />
 
-    <color name="activityback_2048">#fffbf0</color>
+    <color name="activityback_2048">#faf8ef</color>
     <color name="bestback">#f0be38</color>
     <color name="bestfore">#f7ebcc</color>
     <color name="btn_back">#776e65</color>
+    <color name="btn_font_color">#fefefe</color>
     <color name="gridback_2048">#ccc0b2</color>
     <color name="linecolor_2048">#b8af9e</color>
     <color name="scoreback">#776e65</color>
@@ -16,6 +17,12 @@
     <!-- From: file:/D:/SkyDrive/SourceCode/Android_proj/game2048/res/values/dimen.xml -->
     <eat-comment />
 
+    <dimen name="button_bet">10dp</dimen>
+    <dimen name="button_font_size">20sp</dimen>
+    <dimen name="button_height">50dp</dimen>
+    <dimen name="button_width">100dp</dimen>
+    <dimen name="grid_total">240dp</dimen>
+    <dimen name="grid_width">60dp</dimen>
     <dimen name="line_dWidth">8dp</dimen>
     <dimen name="line_width">4dp</dimen>
     <!-- From: file:/D:/SkyDrive/SourceCode/Android_proj/game2048/res/values/ids.xml -->

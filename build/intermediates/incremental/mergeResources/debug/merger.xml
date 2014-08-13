@@ -24,11 +24,6 @@
                 qualifiers=""
                 type="layout" />
             <file
-                name="game_main_layout_back"
-                path="D:\SkyDrive\SourceCode\Android_proj\game2048\res\layout\game_main_layout_back.xml"
-                qualifiers=""
-                type="layout" />
-            <file
                 name="start_layout"
                 path="D:\SkyDrive\SourceCode\Android_proj\game2048\res\layout\start_layout.xml"
                 qualifiers=""
@@ -38,7 +33,9 @@
                 qualifiers="" >
                 <color name="bestback" >#f0be38
                 </color>
-                <color name="activityback_2048" >#fffbf0
+                <color name="btn_font_color" >#fefefe
+                </color>
+                <color name="activityback_2048" >#faf8ef
                 </color>
                 <color name="titlecolor_2048" >#47403a
                 </color>
@@ -58,9 +55,21 @@
             <file
                 path="D:\SkyDrive\SourceCode\Android_proj\game2048\res\values\dimen.xml"
                 qualifiers="" >
+                <dimen name="grid_total" >240dp
+                </dimen>
+                <dimen name="button_height" >50dp
+                </dimen>
+                <dimen name="grid_width" >60dp
+                </dimen>
                 <dimen name="line_width" >4dp
                 </dimen>
+                <dimen name="button_width" >100dp
+                </dimen>
+                <dimen name="button_font_size" >20sp
+                </dimen>
                 <dimen name="line_dWidth" >8dp
+                </dimen>
+                <dimen name="button_bet" >10dp
                 </dimen>
             </file>
             <file

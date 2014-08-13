@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="activityback_2048">#fffbf0</color>
+    <color name="activityback_2048">#faf8ef</color>
     <color name="linecolor_2048">#b8af9e</color>
     <color name="gridback_2048">#ccc0b2</color>
     <color name="titlecolor_2048">#47403a</color>
@@ -10,6 +10,7 @@
     <color name="scoreback">#776e65</color>
     <color name="scorefore">#d7d3c3</color>
     <color name="btn_back">#776e65</color>
+    <color name="btn_font_color">#fefefe</color>
 
 
 

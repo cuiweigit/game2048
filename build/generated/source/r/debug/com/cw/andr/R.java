@@ -15,15 +15,22 @@ public final class R {
         public static final int bestback=0x7f040001;
         public static final int bestfore=0x7f040002;
         public static final int btn_back=0x7f040003;
-        public static final int gridback_2048=0x7f040004;
-        public static final int linecolor_2048=0x7f040005;
-        public static final int scoreback=0x7f040006;
-        public static final int scorefore=0x7f040007;
-        public static final int titlecolor_2048=0x7f040008;
+        public static final int btn_font_color=0x7f040004;
+        public static final int gridback_2048=0x7f040005;
+        public static final int linecolor_2048=0x7f040006;
+        public static final int scoreback=0x7f040007;
+        public static final int scorefore=0x7f040008;
+        public static final int titlecolor_2048=0x7f040009;
     }
     public static final class dimen {
-        public static final int line_dWidth=0x7f050000;
-        public static final int line_width=0x7f050001;
+        public static final int button_bet=0x7f050000;
+        public static final int button_font_size=0x7f050001;
+        public static final int button_height=0x7f050002;
+        public static final int button_width=0x7f050003;
+        public static final int grid_total=0x7f050004;
+        public static final int grid_width=0x7f050005;
+        public static final int line_dWidth=0x7f050006;
+        public static final int line_width=0x7f050007;
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
@@ -60,8 +67,7 @@ public final class R {
     }
     public static final class layout {
         public static final int game_main_layout=0x7f030000;
-        public static final int game_main_layout_back=0x7f030001;
-        public static final int start_layout=0x7f030002;
+        public static final int start_layout=0x7f030001;
     }
     public static final class string {
         public static final int app_name=0x7f070000;
