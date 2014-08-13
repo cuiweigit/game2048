@@ -1,0 +1,432 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/activityback_2048"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal">
+
+        <com.cw.widget.BoldTextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/game_name"
+            android:textColor="@color/titlecolor_2048"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:background="@color/scoreback"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <com.cw.widget.BoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/score"
+                        android:textColor="@color/scorefore"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/zero"
+                        android:textColor="@color/scorefore"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:background="@color/bestback"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <com.cw.widget.BoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/best"
+                        android:textColor="@color/bestfore"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_best"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/zero"
+                        android:textColor="@color/bestfore"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_gameView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_gameView"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:background="@color/gridback_2048"
+            android:orientation="vertical">
+
+            <!-- ********************第一行**************** -->
+
+            <LinearLayout
+                android:id="@+id/ll_line1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/linecolor_2048"
+                    android:paddingBottom="@dimen/line_width"
+                    android:paddingLeft="@dimen/line_dWidth"
+                    android:paddingRight="@dimen/line_width"
+                    android:paddingTop="@dimen/line_dWidth">
+
+                    <com.cw.widget.Grid2048
+                        android:id="@id/r00c00"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/gridback_2048"
+                        android:gravity="center" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/linecolor_2048"
+                    android:paddingBottom="@dimen/line_width"
+                    android:paddingLeft="@dimen/line_width"
+                    android:paddingRight="@dimen/line_width"
+                    android:paddingTop="@dimen/line_dWidth">
+
+                    <com.cw.widget.Grid2048
+                        android:id="@id/r00c01"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/gridback_2048"
+                        android:gravity="center" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/linecolor_2048"
+                    android:paddingBottom="@dimen/line_width"
+                    android:paddingLeft="@dimen/line_width"
+                    android:paddingRight="@dimen/line_width"
+                    android:paddingTop="@dimen/line_dWidth">
+
+                    <com.cw.widget.Grid2048
+                        android:id="@id/r00c02"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/gridback_2048"
+                        android:gravity="center" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/linecolor_2048"
+                    android:paddingBottom="@dimen/line_width"
+                    android:paddingLeft="@dimen/line_width"
+                    android:paddingRight="@dimen/line_dWidth"
+                    android:paddingTop="@dimen/line_dWidth">
+
+                    <com.cw.widget.Grid2048
+                        android:id="@id/r00c03"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/gridback_2048"
+                        android:gravity="center" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!-- ********************第二行**************** -->
+
+            <LinearLayout
+                android:id="@+id/ll_line2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/linecolor_2048"
+                    android:paddingBottom="@dimen/line_width"
+                    android:paddingLeft="@dimen/line_dWidth"
+                    android:paddingRight="@dimen/line_width"
+                    android:paddingTop="@dimen/line_width">
+
+                    <com.cw.widget.Grid2048
+                        android:id="@id/r01c00"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/gridback_2048"
+                        android:gravity="center" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/linecolor_2048"
+                    android:paddingBottom="@dimen/line_width"
+                    android:paddingLeft="@dimen/line_width"
+                    android:paddingRight="@dimen/line_width"
+                    android:paddingTop="@dimen/line_width">
+
+                    <com.cw.widget.Grid2048
+                        android:id="@id/r01c01"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/gridback_2048"
+                        android:gravity="center" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/linecolor_2048"
+                    android:paddingBottom="@dimen/line_width"
+                    android:paddingLeft="@dimen/line_width"
+                    android:paddingRight="@dimen/line_width"
+                    android:paddingTop="@dimen/line_width">
+
+                    <com.cw.widget.Grid2048
+                        android:id="@id/r01c02"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/gridback_2048"
+                        android:gravity="center" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/linecolor_2048"
+                    android:paddingBottom="@dimen/line_width"
+                    android:paddingLeft="@dimen/line_width"
+                    android:paddingRight="@dimen/line_dWidth"
+                    android:paddingTop="@dimen/line_width">
+
+                    <com.cw.widget.Grid2048
+                        android:id="@id/r01c03"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/gridback_2048"
+                        android:gravity="center" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!-- ********************第三行**************** -->
+
+            <LinearLayout
+                android:id="@+id/ll_line3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/linecolor_2048"
+                    android:paddingBottom="@dimen/line_width"
+                    android:paddingLeft="@dimen/line_dWidth"
+                    android:paddingRight="@dimen/line_width"
+                    android:paddingTop="@dimen/line_width">
+
+                    <com.cw.widget.Grid2048
+                        android:id="@id/r02c00"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/gridback_2048"
+                        android:gravity="center" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/linecolor_2048"
+                    android:paddingBottom="@dimen/line_width"
+                    android:paddingLeft="@dimen/line_width"
+                    android:paddingRight="@dimen/line_width"
+                    android:paddingTop="@dimen/line_width">
+
+                    <com.cw.widget.Grid2048
+                        android:id="@id/r02c01"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/gridback_2048"
+                        android:gravity="center" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/linecolor_2048"
+                    android:paddingBottom="@dimen/line_width"
+                    android:paddingLeft="@dimen/line_width"
+                    android:paddingRight="@dimen/line_width"
+                    android:paddingTop="@dimen/line_width">
+
+                    <com.cw.widget.Grid2048
+                        android:id="@id/r02c02"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/gridback_2048"
+                        android:gravity="center" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/linecolor_2048"
+                    android:paddingBottom="@dimen/line_width"
+                    android:paddingLeft="@dimen/line_width"
+                    android:paddingRight="@dimen/line_dWidth"
+                    android:paddingTop="@dimen/line_width">
+
+                    <com.cw.widget.Grid2048
+                        android:id="@id/r02c03"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/gridback_2048"
+                        android:gravity="center" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!-- ********************第四行**************** -->
+
+            <LinearLayout
+                android:id="@+id/ll_line4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/linecolor_2048"
+                    android:paddingBottom="@dimen/line_dWidth"
+                    android:paddingLeft="@dimen/line_dWidth"
+                    android:paddingRight="@dimen/line_width"
+                    android:paddingTop="@dimen/line_width">
+
+                    <com.cw.widget.Grid2048
+                        android:id="@id/r03c00"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/gridback_2048"
+                        android:gravity="center" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/linecolor_2048"
+                    android:paddingBottom="@dimen/line_dWidth"
+                    android:paddingLeft="@dimen/line_width"
+                    android:paddingRight="@dimen/line_width"
+                    android:paddingTop="@dimen/line_width">
+
+                    <com.cw.widget.Grid2048
+                        android:id="@id/r03c01"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/gridback_2048"
+                        android:gravity="center" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/linecolor_2048"
+                    android:paddingBottom="@dimen/line_dWidth"
+                    android:paddingLeft="@dimen/line_width"
+                    android:paddingRight="@dimen/line_width"
+                    android:paddingTop="@dimen/line_width">
+
+                    <com.cw.widget.Grid2048
+                        android:id="@id/r03c02"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/gridback_2048"
+                        android:gravity="center" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/linecolor_2048"
+                    android:paddingBottom="@dimen/line_dWidth"
+                    android:paddingLeft="@dimen/line_width"
+                    android:paddingRight="@dimen/line_dWidth"
+                    android:paddingTop="@dimen/line_width">
+
+                    <com.cw.widget.Grid2048
+                        android:id="@id/r03c03"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/gridback_2048"
+                        android:gravity="center" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

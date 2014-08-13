@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="D:\SkyDrive\SourceCode\Android_proj\game2048\build\intermediates\pre-dexed\debug\gson-2.2.1-c4adbdc92215c621d5f245c6ec23bde724966de1.jar"
+        jar="D:\SkyDrive\SourceCode\Android_proj\game2048\libs\gson-2.2.1.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="42a24d508f5e05bd22cc42bd2e2babd7b5466ec9"/>
+    <item
+        dex="D:\SkyDrive\SourceCode\Android_proj\game2048\build\intermediates\pre-dexed\debug\android-support-v4-6599227b032e025320b0f0ae9af470ce7ac64a38.jar"
+        jar="D:\SkyDrive\SourceCode\Android_proj\game2048\libs\android-support-v4.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="cb6883d96005bc85b3e868f204507ea5b4fa9bbf"/>
+
+</pre-dex-items>

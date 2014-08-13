@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activityback_2048"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal">
+
+        <com.cw.widget.BoldTextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/game_name"
+            android:textColor="@color/titlecolor_2048"
+            android:textSize="50sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <com.cw.widget.NormalButton
+                android:id="@+id/btn_start"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="@color/btn_back"
+                android:text="@string/start_name"
+                android:textColor="#000" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <com.cw.widget.NormalButton
+                android:id="@+id/btn_resume"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="@color/btn_back"
+                android:text="@string/resume_name"
+                android:textColor="#000" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <com.cw.widget.NormalButton
+                android:id="@+id/btn_exit"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="@color/btn_back"
+                android:text="@string/exit_name"
+                android:textColor="#000" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/D:/SkyDrive/SourceCode/Android_proj/game2048/res/layout/start_layout.xml -->

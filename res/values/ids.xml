@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="r00c00" type="id">0x7f050000</item>
+    <item name="r00c01" type="id">0x7f050001</item>
+    <item name="r00c02" type="id">0x7f050002</item>
+    <item name="r00c03" type="id">0x7f050003</item>
+    <item name="r01c00" type="id">0x7f050004</item>
+    <item name="r01c01" type="id">0x7f050005</item>
+    <item name="r01c02" type="id">0x7f050006</item>
+    <item name="r01c03" type="id">0x7f050007</item>
+    <item name="r02c00" type="id">0x7f050008</item>
+    <item name="r02c01" type="id">0x7f050009</item>
+    <item name="r02c02" type="id">0x7f05000A</item>
+    <item name="r02c03" type="id">0x7f05000B</item>
+    <item name="r03c00" type="id">0x7f05000C</item>
+    <item name="r03c01" type="id">0x7f05000D</item>
+    <item name="r03c02" type="id">0x7f05000E</item>
+    <item name="r03c03" type="id">0x7f05000F</item>
+
+</resources>
