@@ -131,7 +131,7 @@ public class GameMainActivity extends SuperActivity implements OnTouchListener {
         float hv = Math.abs(y) - Math.abs(x);
         if (hv > 0) {// 纵向移动
             res = y > 0 ? EnumDirection._DOWN : EnumDirection._UP;
-        } else if(hv < 0) {// 横向移动
+        } else if (hv < 0) {// 横向移动
             res = x > 0 ? EnumDirection._RIGHT : EnumDirection._LEFT;
         }
         return res;
@@ -183,12 +183,35 @@ public class GameMainActivity extends SuperActivity implements OnTouchListener {
             default:
                 return;
         }
-        boolean res = goOneRound();
-        if (!res) {
+        goOneRound();
+        if (isGameOver()) {
             gameOver();
         }
     }
 
+    /**
+     * 游戏是否结束
+     *
+     * @return
+     */
+    private boolean isGameOver() {
+        for (int y = 0; y < _GRID_LEN; ++y) {
+            for (int x = 0; x < _GRID_LEN; ++x) {
+                if (data2048[y][x] == 0) //有空位
+                    return false;
+                else if (x + 1 < _GRID_LEN && data2048[y][x] == data2048[y][x + 1])
+                    return false;
+                else if (y + 1 < _GRID_LEN && data2048[y][x] == data2048[y + 1][x])
+                    return false;
+            }
+        }
+        return true;
+    }
+
+
+    /**
+     * 游戏结束执行的操作
+     */
     private void gameOver() {
         try {
             int s = Integer.valueOf(tv_score.getText() + "");
@@ -217,7 +240,6 @@ public class GameMainActivity extends SuperActivity implements OnTouchListener {
     }
 
 
-
     @Override
     protected void onDestroy() {
         saveDate();
@@ -232,7 +254,7 @@ public class GameMainActivity extends SuperActivity implements OnTouchListener {
             Gson gson = new Gson();
             String data = gson.toJson(data2048);
             int s = Integer.valueOf(tv_score.getText() + "");
-            editor.putInt(_SCORE_KEY,s );
+            editor.putInt(_SCORE_KEY, s);
             editor.putString(_DATA_KEY, data);
             editor.commit();
         } catch (Exception e) {
