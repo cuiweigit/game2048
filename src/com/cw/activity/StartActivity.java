@@ -3,7 +3,6 @@ package com.cw.activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -59,7 +58,6 @@ public class StartActivity extends SuperActivity implements OnClickListener {
     private void setContinueGame()
     {
         String data = sp.getString(_DATA_KEY, "");
-        Log.v("msg",data);
         if (StringUtil.isBlankOrNull(data)) {
             // btn_resume.setVisibility(View.GONE);
             btn_resume.setEnabled(false);

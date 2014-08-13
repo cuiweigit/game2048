@@ -2,7 +2,6 @@ package com.cw.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
@@ -110,7 +109,6 @@ public class GameMainActivity extends SuperActivity implements OnTouchListener {
             upY = event.getY();
             curDirection = getDirection(downX, downY, upX, upY);
             move(curDirection);
-            // Log.v("cw", curDirection + "");
             return false;
         } else {
             return true;
@@ -186,7 +184,6 @@ public class GameMainActivity extends SuperActivity implements OnTouchListener {
                 return;
         }
         boolean res = goOneRound();
-        //Log.v("msg",res + "");
         if (!res) {
             gameOver();
         }
